@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Node.js guide</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal - v4.0.1
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  code {
+    color: white;
+    font-size: 18px;
+  }
+</style>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="/#guides">Cheat sheets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Start Node.js Section ======= -->
+  <section id="guide" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>My guides</h2>
+        <p>Node.js</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Get started</h3>
+          <div class="resume-item pb-0">
+            <h4>Installation & Running your application</h4>
+            <p>Node.js is a runtime environment that allows the execution of Javascript in the back-end</p>
+            <ul>
+              <li>Download and install <a href="https://nodejs.org/en/">Node.js</a></li>
+              <li>Verify the installion with the following terminal commands: 'node -v', 'npm -v'</li>
+              <li>Download and install your prefered code editor <a href="https://code.visualstudio.com/download">(VS
+                  Code)</a></li>
+              <li>Create a JavaScript file and run it with the following terminal command: 'node filename.js</li>
+            </ul>
+          </div>
+
+          <h3 class="resume-title">The basics</h3>
+          <div class="resume-item">
+            <h4>Scopes</h4>
+            <ul>
+              <li>Function (Local) Scope</li>
+              <p>When a variable is defined inside a function, it will be local only for that function and can’t be used
+                outside.</p>
+              <li>Global Scope</li>
+              <p>When a variable is declared outside of a function it will become Global and will be accessible from
+                anywhere.</p>
+              <li>Block Scope</li>
+              <p>Everything inside curly braces { }, if-else cases and for loops are block-scoped.</p>
+            </ul>
+
+          </div>
+
+          <div class="resume-item">
+            <h4>Variables</h4>
+            <p>In Node.js there are three options in terms of keywords used to declare a variable: 'const', 'let' and
+              'var'.</p>
+
+            <li>const <em>(supports local, global and block scope)</em></li>
+            <p>is used when you want a variable where the value CANNOT be reassigned. Notice that if you create a const
+              object,
+              you are still able to change the properties of the object, but not the entire object itself.</p>
+            <li>let <em>(supports local, global and block scope)</em></li>
+            <p>is used when you want a variable where the value CAN be reassigned.</p>
+            <li>var <em>(supports local and global scope)</em></li>
+            <p>can be used when you do not want the support of block scope.</p>
+            <p>SYNTAX:</p>
+
+
+            <li>Declaration:</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>
+const variableName = "Text value";
+
+let variableName = "Text value";
+
+var variableName = "Text value";</pre>
+              </code>
+            </h5>
+          </div>
+
+          <div class="resume-item">
+            <h4>Arrays</h4>
+            <p>An array is an object, and it is used to store multiple values.</p>
+
+            <li>Declaration:</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>const arrayName = [item1, item2, item3];</pre></code>
+            </h5>
+
+          </div>
+
+          <div class="resume-item">
+            <h4>Loops</h4>
+            <p>A loop is used to execute a block of code a number of times.</p>
+
+            <li>For Loop:</li>
+
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>for (i = 0; i < 10; i++) {
+  console.log('This loop runs as long as i > 10');
+}</pre></code>
+            </h5>
+
+            <li>For each loop:</li>
+
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>for (property in object) {
+  console.log(property + 'This logs each property of the object')
+}</pre></code>
+            </h5>
+
+            <li>While loop:</li>
+
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>while (condition) {
+  console.log("This loop runs as long as the condition is true")
+}</pre></code>
+            </h5>
+          </div>
+          <div class="resume-item">
+            <h4>Objects</h4>
+            <p>Objects have properties and values. Objects of the same type, ex: Car, has the same properties, but the
+              values, ex: weight, differ.</p>
+            <li>Creating an object:</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>let objectName = {
+ key: "value",
+ key: "value",
+ key: "value"
+}</pre></code>
+            </h5>
+            <li>Car object example:</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>let Car = {
+   brand: "Mercedes-Benz",
+   model: "300 SL",
+   price: 1.500.000
+}</pre></code>
+            </h5>
+
+          </div>
+
+          <div class="resume-item">
+            <h4>Functions</h4>
+            <p>
+              Functions are blocks of code, which can be executed multiple times and executed where/when you desire.
+              Functions can have 0..* parameters. This means you can pass values to the function.
+            </p>
+            <ul>
+            <li>Creating and calling a function</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>function functionName (parameter1, parameter2) {
+  console.log("This function logs parameter1: " + parameter1)
+}
+
+functionName(parameter1, parameter2)
+</pre></code>
+            </h5>
+            <li>Callbacks</li>
+            <p>A callback function is a function passed as an argument into another function. In the first example, the setTimeout 
+              function sets a timer on 3000ms and executes a callback function when the timer expires. In the second example, the setTimeout 
+              function also executes a callback function after 3000ms, but the function hasn't been created beforehand, like the callbackFunctionName.
+            </p>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>
+setTimeout(callbackFunctionName(value1, value2), 3000)
+
+setTimeout((value1, value2) => {
+  value1 += value2
+}, 3000)
+</pre>
+</code>
+            </h5>
+            </ul>
+          </div>
+          <h3 class="resume-title">Environment variables</h3>
+          <div class="resume-item">
+            <h4>Defining environment variables</h4>
+            <p>
+              Environment variables are used to configure the environment in which our application is running. 
+              We might want to have a development environment that connects to a test-database instead of a production database.
+            </p>
+            <p>Environment variables can also be used to store sensitive credentials or keys.</p>
+            <ul>
+            <li>
+              In Node.js, the dotenv library is used to manage environment variables. 
+              Install dotenv in the project folder by using the node package manager. 
+              Terminal command: 'npm install dotenv --save'.
+            </li>
+            <li>Import the dotenv library to app.js by using the require keyword.</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>const dotenv = require("dotenv")</pre></code>
+            </h5>
+            <li>Create a .env file and use the following in app.js to specify the file path and load the environment variables.</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>dotenv.config({
+  path: "./.env"
+})</pre>
+</code>
+            </h5>
+            <p>Defining environment variables example.</p>
+            <li>Edit the .env file.</li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>
+PORT=2000
+DB_USER="username"
+DB_PASSWORD="password"
+</pre>
+              </code>
+            </h5>
+            <li>Using the environment variables in the app.js file. </li>
+            <h5 style="padding-top: 15px; border-radius: 10px;">
+              <code>
+                <pre>
+const PORT = process.env.PORT || 3000;
+app.listen(PORT)</pre>
+</code><code>
+<pre>const connection = mysql.createConnection({
+host: "localhost",
+port: "3306",
+user: process.env.DB_USER,
+password: process.env.DB_PASSWORD,
+database: "nodejsdb"
+})</pre></code>
+                </h5>
+          </ul>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-6">
+          <h3 class="resume-title">Express.js</h3>
+
+          <div class="resume-item">
+            <h4>Creating an express app</h4>
+            <p>Express.js is a framework for node.js that simplifies the building of web applications and API's.</p>
+
+            <ul>
+              <li>Create a new folder for your project.</li>
+              <li>Install express in the project folder by using the node package manager. Terminal command: 'npm
+                install express'.</li>
+              <li>Create a package.json file containing project dependencies:</li>
+              <h5 style="padding-top: 15px; border-radius: 10px;">
+                <code>
+                  <pre>{
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}</pre></code>
+              </h5>
+              <li>Autocreation of project dependencies. Terminal command: 'npm init -y'.</li>
+              <li>Create a new JavaScript file (Standard naming convention: 'app.js').</li>
+
+              <li>Import express library by using the require keyword.</li>
+              <h5 style="padding-top: 15px; border-radius: 10px;">
+                <code>
+                  <pre>const express = require("express")</pre></code>
+              </h5>
+
+              <li>Instansiate the express library.</li>
+              <h5 style="padding-top: 15px; border-radius: 10px;">
+                <code>
+                  <pre>const app = express()</pre></code>
+              </h5>
+
+              <li>Pick a specific port on which the server should run.</li>
+              <h5 style="padding-top: 15px; border-radius: 10px;">
+                <code>
+                  <pre>app.listen(8080)</pre></code>
+              </h5>
+
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>Serving HTML pages with express</h4>
+            <p>In order to serve an HTML page, we need to first create an express app. Follow the above.</p>
+            <ul>
+              <li>Create an HTML page with a name of your choice.</li>
+              <li>The next step is to send the HTML file on a specific route. In the following example we will get the
+                HTML file
+                when navigating to /nodejs. <br> '__dirname' will give us the project location and afterwards we need to
+                add the specific HTML file. If the file is in another folder inside the project folder, as in the
+                example, do as in
+                the example.
+              </li>
+              <h5 style="padding-top: 15px; border-radius: 10px;">
+                <code>
+                  <pre>app.get("/nodejs", (req, res) => {
+  res.sendFile(__dirname + "/assets/nodejs.html")
+})</pre></code>
+              </h5>
+              <li>In order to use css, Javascript and images, we need to import the files/folders. In the example below
+                we have an assets folder inside our project folder which contains a css, JavaScript and image folder:
+              </li>
+              <h5 style="padding-top: 15px; border-radius: 10px;">
+                <code>
+                  <pre>app.use(express.static("assets"))</pre></code>
+              </h5>
+            </ul>
+
+          </div>
+
+          <div class="resume-item">
+            <h4>Connecting to a database</h4>
+
+            <p>Connecting to a database.</p>
+            <p>
+              <ul>
+                <li>Use the node package manager to install MySQL inside the project folder. Terminal command: 'npm
+                  install mysql'.</li>
+                <li>Import MySQL by using the require keyword.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>const mysql = require("mysql")</pre></code>
+                </h5>
+                <li>Make sure your package.json file contains the right project dependencies.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>{
+  "dependencies": {
+    "express": "^4.17.1"
+    "mysql": "^2.18.1"
+  }
+}</pre></code> </h5>
+                <li>Create connection to the database.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>const connection = mysql.createConnection({
+  host: "localhost",
+  port: "3306",
+  user: "root",
+  password: "password",
+  database: "nodejsdb"
+})</pre></code>
+                </h5>
+                <li>Test connection to the database.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>connection.connect((err) => {
+  if(!err) {
+    console.log("DATABASE CONNECTION SUCCESFUL")
+  } else {
+    console.log("ERROR COULD NOT CONNECT TO DATABASE: " +  
+    JSON.stringify(err, undefined, 2))
+  }
+})</pre></code>
+                </h5>
+              </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Creating a CRUD API with express and MySQL</h4>
+            <p>Create an express app and make a connection to the database. Make sure you have a running database.</p>
+            <p>
+              <ul>
+                <li>A get request to fetch all data from a specific database table. 'connection' and 'app' are constants
+                  defined earlier on this cheat sheet.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>app.get("/contact", function (req, res) {
+  connection.query("SELECT * FROM contact",
+  (err, rows, fields) => {
+  res.json(rows)
+  })
+})</pre></code>
+                </h5>
+                <li>A get request to fetch a specific database table row by id.</li>
+
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>app.get("/contact/:id", function (req, res) {
+  connection.query("SELECT * FROM contact where id = ?",
+  [req.params.id], (err, rows, fields) => {
+  res.json(rows)
+  })
+});</pre></code>
+                </h5>
+
+                <li>In order make a post request to insert data into a database, we need to parse the data from the
+                  body, why we need a
+                  bodyparser, which exists in the express library. The body-parser extracts the entire body portion of
+                  an incoming request and exposes it on req.body.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>app.use(express.json())</pre></code>
+                </h5>
+
+                <li>Post request to insert data into a database.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>app.post("/contact", function (req, res) {
+  const params = req.body
+  connection.query("INSERT INTO contact SET ?", params, 
+  (err, rows, fields) => {
+  res.send('Contact with the name ' + params.firstname + ' ' 
+  + params.lastname + ' has been added.');
+  })
+})</pre></code>
+                </h5>
+                <li>Delete request to delete a specific table row by id.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>
+app.delete("/contact/:id", function (req, res) {
+  connection.query("DELETE FROM contact where id = ?",
+  [req.params.id], (err, rows, fields) => {
+  res.send("Contact " + req.params.id + " succesfully deleted");
+  })
+})
+</pre></code>
+                </h5>
+                <li>Put request to update a specific table row by id. Uses the body-parser as the post request did.</li>
+                <h5 style="padding-top: 15px; border-radius: 10px;">
+                  <code>
+                    <pre>
+app.put("/contact/:id", function (req, res) {
+  const id = req.params.id
+  const {firstname, lastname} = req.body
+  connection.query("UPDATE contact SET firstname = ?, 
+  lastname = ? WHERE id = ?",
+  [firstname, lastname, id],(err, rows, fields) => {
+  res.send("Contact succesfully updated");
+  })
+})
+</pre></code>
+                </h5>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Node.js section -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
